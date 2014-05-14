@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>51CF2A26-D3D8-4ABB-B010-0DFAFC12BFCE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Downloading Asynchronously with NSURLConnection</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2AC186C4-F79A-41CE-8944-21A9DE20758F</key>
+		<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-7-programming-cookbook-source-codes-master/Chapter 11/11.1.Downloading Asynchronously with NSURLConnection/Downloading Asynchronously with NSURLConnection.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2AC186C4-F79A-41CE-8944-21A9DE20758F</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2AC186C4-F79A-41CE-8944-21A9DE20758F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2AC186C4-F79A-41CE-8944-21A9DE20758F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS7_Programming_Cookbook</string>
+		</dict>
+	</array>
+</dict>
+</plist>

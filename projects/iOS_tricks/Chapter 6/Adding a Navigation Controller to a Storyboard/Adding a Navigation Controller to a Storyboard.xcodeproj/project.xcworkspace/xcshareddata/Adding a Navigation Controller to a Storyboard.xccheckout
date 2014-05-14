@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FF870DDB-13BF-4704-878B-424698D8D615</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Adding a Navigation Controller to a Storyboard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9CC990B6-2AA5-47F7-A9DE-F799FCCD8A49</key>
+		<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-7-programming-cookbook-source-codes-master/Chapter 6/Adding a Navigation Controller to a Storyboard/Adding a Navigation Controller to a Storyboard.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9CC990B6-2AA5-47F7-A9DE-F799FCCD8A49</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9CC990B6-2AA5-47F7-A9DE-F799FCCD8A49</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CC990B6-2AA5-47F7-A9DE-F799FCCD8A49</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS7_Programming_Cookbook</string>
+		</dict>
+	</array>
+</dict>
+</plist>

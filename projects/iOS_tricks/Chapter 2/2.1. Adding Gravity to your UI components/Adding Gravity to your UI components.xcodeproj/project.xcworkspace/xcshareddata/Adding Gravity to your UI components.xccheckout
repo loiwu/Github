@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>79474474-F645-4868-AD4A-5F62F9D13C39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Adding Gravity to your UI components</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>85121F3D-825C-48DE-B41E-2B3F981158FA</key>
+		<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-7-programming-cookbook-source-codes-master/Chapter 2/2.1. Adding Gravity to your UI components/Adding Gravity to your UI components.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>85121F3D-825C-48DE-B41E-2B3F981158FA</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>85121F3D-825C-48DE-B41E-2B3F981158FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85121F3D-825C-48DE-B41E-2B3F981158FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS7_Programming_Cookbook</string>
+		</dict>
+	</array>
+</dict>
+</plist>

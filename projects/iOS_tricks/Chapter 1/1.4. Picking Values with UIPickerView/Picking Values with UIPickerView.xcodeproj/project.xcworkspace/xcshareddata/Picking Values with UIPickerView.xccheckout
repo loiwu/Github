@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4A79CDA8-04A3-49CF-8842-5CB4D3B70650</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Picking Values with UIPickerView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E4163C1A-2DD4-4872-8210-0155CC9C4E10</key>
+		<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-7-programming-cookbook-source-codes-master/Chapter 1/1.4. Picking Values with UIPickerView/Picking Values with UIPickerView.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E4163C1A-2DD4-4872-8210-0155CC9C4E10</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/iOS7_Programming_Cookbook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E4163C1A-2DD4-4872-8210-0155CC9C4E10</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E4163C1A-2DD4-4872-8210-0155CC9C4E10</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS7_Programming_Cookbook</string>
+		</dict>
+	</array>
+</dict>
+</plist>

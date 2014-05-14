@@ -1,0 +1,11 @@
+UICollisionBehavior
+UIGravityBehavior
+UIPushBehavior
+UISnapBehavior
+animator
+
+2.1. Adding Gravity to Your IO Component
+初始化一个UIGravityBehavior类型的对象
+将需要加入重力效果的UI Component加入其中
+create一个UIDynamicAnimator实例
+将gravity behavior加入到这个animator中 animator会自动完成其它的工作
