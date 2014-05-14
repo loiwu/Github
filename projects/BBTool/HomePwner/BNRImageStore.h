@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BNRImageStore : NSObject
+@interface BNRImageStore : NSObject //<>Creating BNRItemStore
 
-+ (instancetype)sharedStore;
+//Notice that it is a class method and prefixed with a + instead of a -
++ (instancetype)sharedStore; //to get the single instance of BNRItemStore
 
 - (void)setImage:(UIImage *)image forKey:(NSString *)key;
 - (UIImage *)imageForKey:(NSString *)key;

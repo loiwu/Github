@@ -30,7 +30,7 @@
     return sharedStore;
 }
 
-// No one should call init
+// No one should call init - If a programmer calls [[BNRItemStore alloc] init], let us know the eooro of the ways
 - (instancetype)init
 {
     @throw [NSException exceptionWithName:@"Singleton"
@@ -39,7 +39,7 @@
     return nil;
 }
 
-// Secret designated initializer
+// Secret designated initializer - Here is the real (secret) initializer
 - (instancetype)initPrivate
 {
     self = [super init];

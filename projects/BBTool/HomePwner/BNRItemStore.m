@@ -7,11 +7,14 @@
 //
 
 #import "BNRItemStore.h"
-#import "BNRItem.h"
+#import "BNRItem.h" // need to import it, since it will have to send message to BNRItem instances at some point
 #import "BNRImageStore.h"
+#import "BNRAppDelegate.h"
 @import CoreData;
 
-@interface BNRItemStore ()
+//This is a pretty common design for a class that wants strict control over its internal data:
+//an object hangs onto a mutable data structure, but other objects only get access to an immutable version of it
+@interface BNRItemStore () // so we declare mutable arrays in the class extention
 
 @property (nonatomic) NSMutableArray *privateItems;
 @property (nonatomic, strong) NSMutableArray *allAssetTypes;
@@ -127,9 +130,9 @@
     }
 }
 
-- (NSArray *)allItems
+- (NSArray *)allItems //override allItems to return an immutable copy of its priveteItems property
 {
-    return [self.privateItems copy];
+    return [self.privateItems copy]; // return self.privateItems;
 }
 
 - (BNRItem *)createItem
@@ -146,6 +149,13 @@
                                                   inManagedObjectContext:self.context];
 
     item.orderingValue = order;
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    item.valueInDollars = [defaults integerForKey:BNRNextItemValuePrefsKey];
+    item.itemName = [defaults objectForKey:BNRNextItemNamePrefsKey];
+
+    // Just for fun, list out all the defaults
+    NSLog(@"defaults = %@", [defaults dictionaryRepresentation]);
 
     [self.privateItems addObject:item];
 

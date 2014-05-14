@@ -30,6 +30,7 @@
 		520AA4D4187EF2690048F174 /* BNRImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 520AA4D3187EF2690048F174 /* BNRImageTransformer.m */; };
 		520AA4D7187EF39F0048F174 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 520AA4D6187EF39F0048F174 /* BNRItem.m */; };
 		5246270D188382F3003B80CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5246270F188382F3003B80CA /* Localizable.strings */; };
+		52462712188384B9003B80CA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 52462711188384B9003B80CA /* Settings.bundle */; };
 		52CEE9C6187EF73A0037259A /* BNRAssetTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CEE9C5187EF73A0037259A /* BNRAssetTypeViewController.m */; };
 		52CEEBE21883809D0037259A /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CEEBE41883809D0037259A /* BNRDetailViewController.xib */; };
 /* End PBXBuildFile section */
@@ -79,8 +80,9 @@
 		520AA4D3187EF2690048F174 /* BNRImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageTransformer.m; sourceTree = "<group>"; };
 		520AA4D5187EF39F0048F174 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		520AA4D6187EF39F0048F174 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
-		5246270E188382F3003B80CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		52462710188382FD003B80CA /* es */ = {isa = PBXFileReference; lastKnownFileType = file; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5246270E188382F3003B80CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		52462710188382FD003B80CA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		52462711188384B9003B80CA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		52CEE9C4187EF73A0037259A /* BNRAssetTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAssetTypeViewController.h; sourceTree = "<group>"; };
 		52CEE9C5187EF73A0037259A /* BNRAssetTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAssetTypeViewController.m; sourceTree = "<group>"; };
 		52CEEBE5188380BF0037259A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BNRDetailViewController.xib; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				52CEEBE41883809D0037259A /* BNRDetailViewController.xib */,
 				52CEE9C4187EF73A0037259A /* BNRAssetTypeViewController.h */,
 				52CEE9C5187EF73A0037259A /* BNRAssetTypeViewController.m */,
+				52462711188384B9003B80CA /* Settings.bundle */,
 				520AA490187C4EC00048F174 /* Images.xcassets */,
 				520AA485187C4EC00048F174 /* Supporting Files */,
 			);
@@ -285,6 +288,7 @@
 				52CEEBE21883809D0037259A /* BNRDetailViewController.xib in Resources */,
 				520AA4CB187E42150048F174 /* BNRItemCell.xib in Resources */,
 				520AA489187C4EC00048F174 /* InfoPlist.strings in Resources */,
+				52462712188384B9003B80CA /* Settings.bundle in Resources */,
 				520AA491187C4EC00048F174 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

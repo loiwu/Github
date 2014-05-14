@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BBE0BD13-8311-46DA-83FB-022AB771AC1C</string>
+	<string>5F12AB8E-108C-4AF5-83FA-93FA7101F88D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HomePwner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>330C5EB7-71C1-4CFE-932F-15D04975C12F</key>
-		<string>https://github.com/loiwu/BBTool.git</string>
+		<key>C667FE67-FAF3-4B75-8AE9-116535504B8D</key>
+		<string>https://github.com/loiwu/Github.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HomePwner/HomePwner.xcodeproj/project.xcworkspace</string>
+	<string>projects/BBTool/HomePwner.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>330C5EB7-71C1-4CFE-932F-15D04975C12F</key>
-		<string>../../..</string>
+		<key>C667FE67-FAF3-4B75-8AE9-116535504B8D</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/loiwu/BBTool.git</string>
+	<string>https://github.com/loiwu/Github.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>330C5EB7-71C1-4CFE-932F-15D04975C12F</string>
+	<string>C667FE67-FAF3-4B75-8AE9-116535504B8D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>330C5EB7-71C1-4CFE-932F-15D04975C12F</string>
+			<string>C667FE67-FAF3-4B75-8AE9-116535504B8D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BBHome</string>
+			<string>Github</string>
 		</dict>
 	</array>
 </dict>

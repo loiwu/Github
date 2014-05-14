@@ -88,7 +88,7 @@
     // Load the NIB file
     UINib *nib = [UINib nibWithNibName:@"BNRItemCell" bundle:nil];
 
-    // Register this NIB, which contains the cell
+    //override viewDidLoad, Register this NIB, which contains the cell
     [self.tableView registerNib:nib
          forCellReuseIdentifier:@"BNRItemCell"];
 
@@ -176,14 +176,22 @@
     [self.tableView reloadData];
 }
 
+//<>Implementing data source methods
+//following two methods anre the required methods in the UITableViewDatSource potocol
+//required tableView:numberOfRowsInSection: method when configuring a table view
+//By default, a table view has one section
+//<>Code Snippet Library - Control+Option+Command+2
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [[[BNRItemStore sharedStore] allItems] count];
 }
-
+//required tableView:cellForRowAtIndexPath: method when configuring a table view
+//<>Creating and retrieving UITableViewCells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Get a new or recycled cell
+    // <>Reusing UITableViewCells
+    // By convention, the reuse identifier is typically the name of the cell class
     BNRItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BNRItemCell" forIndexPath:indexPath];
 
     // Set the text on the cell with the description of the item
