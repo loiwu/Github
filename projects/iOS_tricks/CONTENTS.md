@@ -61,3 +61,28 @@
 <br/>5.6. Handling Events in Collection Views
 <br/>5.7. Providing a Header and a Footer in a Flow Layout
 <br/>5.8. Adding Custom Interactions to Collection Views
+
+
+
+#Problems set
+
+<br/>4. Constructing and Using Table Views
+
+<br/>4.1. Populating a Table View with Data
+<br/>Problem
+<br/>You would like to populate your table view with data.
+<br/>Solution
+<br/><1>Conform to the UITableViewDataSource protocol in an object 
+<br/><2>Assign that object to the dataSource property of a table view.
+
+
+
+
+
+
+
+
+
+
+
+

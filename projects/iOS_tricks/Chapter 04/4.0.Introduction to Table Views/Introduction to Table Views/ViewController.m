@@ -6,27 +6,29 @@
 //  Copyright (c) 2013 Pixolity Ltd. All rights reserved.
 //
 
-//#import "ViewController.h"
-//
-//@interface ViewController ()
-//@property (nonatomic, strong) UITableView *myTableView;
-//@end
-//
-//@implementation ViewController
-//
-//- (void)viewDidLoad{
-//    [super viewDidLoad];
-//    
-//    self.myTableView = [[UITableView alloc]
-//                        initWithFrame:self.view.bounds
-//                        style:UITableViewStylePlain];
-//    
-//    [self.view addSubview:self.myTableView];
-//    
-//}
-//
-//@end
+/*
+#import "ViewController.h"
 
+@interface ViewController ()
+@property (nonatomic, strong) UITableView *myTableView;
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+ 
+    self.myTableView = [[UITableView alloc]
+                        initWithFrame:self.view.bounds
+                        style:UITableViewStylePlain];
+ 
+    [self.view addSubview:self.myTableView];
+ 
+}
+
+@end
+*/
+ 
 #import "ViewController.h"
 
 @interface ViewController () <UITableViewDelegate>
