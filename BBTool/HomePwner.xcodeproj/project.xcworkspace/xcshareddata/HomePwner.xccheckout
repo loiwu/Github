@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BBE0BD13-8311-46DA-83FB-022AB771AC1C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HomePwner</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>330C5EB7-71C1-4CFE-932F-15D04975C12F</key>
+		<string>https://github.com/loiwu/BBTool.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HomePwner/HomePwner.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>330C5EB7-71C1-4CFE-932F-15D04975C12F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/BBTool.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>330C5EB7-71C1-4CFE-932F-15D04975C12F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>330C5EB7-71C1-4CFE-932F-15D04975C12F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BBHome</string>
+		</dict>
+	</array>
+</dict>
+</plist>
