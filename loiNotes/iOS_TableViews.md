@@ -50,19 +50,19 @@ typedef NS_ENUM(NSInteger, UITableViewStyle) {
  
  +++++++++++++++++++++++++++++++++
  
-  #import "ViewController.h"
-@interface ViewController () <UITableViewDelegate> 
-@property (nonatomic, strong) UITableView *myTableView; 
-@end
-@implementation ViewController - (void)viewDidLoad{
-        [super viewDidLoad];
-        self.myTableView = [[UITableView alloc]
-                            initWithFrame:self.view.bounds
-                            style:UITableViewStylePlain];
-        self.myTableView.delegate = self;
-        [self.view addSubview:self.myTableView];
-    }
-@end
+//  #import "ViewController.h"
+//@interface ViewController () <UITableViewDelegate> 
+//@property (nonatomic, strong) UITableView *myTableView; 
+//@end
+//@implementation ViewController - (void)viewDidLoad{
+//        [super viewDidLoad];
+//        self.myTableView = [[UITableView alloc]
+//                            initWithFrame:self.view.bounds
+//                            style:UITableViewStylePlain];
+//        self.myTableView.delegate = self;
+//        [self.view addSubview:self.myTableView];
+//    }
+//@end
 
  +++++++++++++++++++++++++++++++++
  
@@ -74,14 +74,14 @@ typedef NS_ENUM(NSInteger, UITableViewStyle) {
  
  +++++++++++++++++++++++++++++++++
  
- - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-	if ([tableView isEqual:self.myTableView]) { 
-		return 100.0f;
-	}
-	return 40.0f;
- }
+//- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//	if ([tableView isEqual:self.myTableView]) { 
+//		return 100.0f;
+//	}
+//	return 40.0f;
+// }
 
- +++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++
  
  (8) The location of a cell in a table view is represented by its index path.
  An index path is the combination of the section and the row index, 
