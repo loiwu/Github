@@ -50,19 +50,19 @@ typedef NS_ENUM(NSInteger, UITableViewStyle) {
  
  +++++++++++++++++++++++++++++++++
  
-//  #import "ViewController.h"
-//@interface ViewController () <UITableViewDelegate> 
-//@property (nonatomic, strong) UITableView *myTableView; 
-//@end
-//@implementation ViewController - (void)viewDidLoad{
-//        [super viewDidLoad];
-//        self.myTableView = [[UITableView alloc]
-//                            initWithFrame:self.view.bounds
-//                            style:UITableViewStylePlain];
-//        self.myTableView.delegate = self;
-//        [self.view addSubview:self.myTableView];
-//    }
-//@end
+<br/>  #import "ViewController.h"
+<br/>@interface ViewController () <UITableViewDelegate> 
+<br/>@property (nonatomic, strong) UITableView *myTableView; 
+<br/>@end
+<br/>@implementation ViewController - (void)viewDidLoad{
+<br/>        [super viewDidLoad];
+<br/>        self.myTableView = [[UITableView alloc]
+<br/>                            initWithFrame:self.view.bounds
+<br/>                            style:UITableViewStylePlain];
+<br/>        self.myTableView.delegate = self;
+<br/>        [self.view addSubview:self.myTableView];
+<br/>    }
+<br/>@end
 
  +++++++++++++++++++++++++++++++++
  
@@ -74,12 +74,12 @@ typedef NS_ENUM(NSInteger, UITableViewStyle) {
  
  +++++++++++++++++++++++++++++++++
  
-//- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//	if ([tableView isEqual:self.myTableView]) { 
-//		return 100.0f;
-//	}
-//	return 40.0f;
-// }
+<br/>- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+<br/>	if ([tableView isEqual:self.myTableView]) { 
+<br/>		return 100.0f;
+<br/>	}
+<br/>	return 40.0f;
+<br/> }
 
 +++++++++++++++++++++++++++++++++
  
