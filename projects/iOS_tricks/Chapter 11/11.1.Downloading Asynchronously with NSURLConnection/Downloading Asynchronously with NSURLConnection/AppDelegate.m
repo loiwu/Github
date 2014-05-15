@@ -24,36 +24,40 @@
   didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
 /* 1 */
-//  NSString *urlAsString = @"http://www.apple.com";
-//  NSURL *url = [NSURL URLWithString:urlAsString];
-//  NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-//  NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-//
-//  [NSURLConnection
-//   sendAsynchronousRequest:urlRequest
-//   queue:queue
-//   completionHandler:^(NSURLResponse *response,
-//                       NSData *data,
-//                       NSError *error) {
-//
-//     if ([data length] >0  &&
-//         error == nil){
-//       NSString *html = [[NSString alloc] initWithData:data
-//                                              encoding:NSUTF8StringEncoding];
-//       NSLog(@"HTML = %@", html);
-//     }
-//     else if ([data length] == 0 &&
-//              error == nil){
-//       NSLog(@"Nothing was downloaded.");
-//     }
-//     else if (error != nil){
-//       NSLog(@"Error happened = %@", error);
-//     }
-//
-//   }];
+    /*
+  NSString *urlAsString = @"http://www.justek.us"; //1. Have our URL in an instance of NSString
+  NSURL *url = [NSURL URLWithString:urlAsString]; //2. Convert our string to an instance of NSURL
+  NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];//3.Place URL in a URL Request
+  NSOperationQueue *queue = [[NSOperationQueue alloc] init]; // An operation queue
     
+    //4. Create an instance of NSURLConnection and pass the URL request to it.
+    //completionHandler:A block object to be executed when the asynchronous connection finishes its work either successfully or unsuccessfully.
+  [NSURLConnection
+   sendAsynchronousRequest:urlRequest
+   queue:queue
+   completionHandler:^(NSURLResponse *response,
+                       NSData *data,
+                       NSError *error) {
+
+     if ([data length] >0  &&
+         error == nil){
+       NSString *html = [[NSString alloc] initWithData:data
+                                              encoding:NSUTF8StringEncoding];
+       NSLog(@"HTML = %@", html);
+     }
+     else if ([data length] == 0 &&
+              error == nil){
+       NSLog(@"Nothing was downloaded.");
+     }
+     else if (error != nil){
+       NSLog(@"Error happened = %@", error);
+     }
+
+   }];
+    */
     /* 2 */
-NSString *urlAsString = @"http://www.apple.com";
+  
+NSString *urlAsString = @"http://www.justek.us";
 NSURL *url = [NSURL URLWithString:urlAsString];
 NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
 NSOperationQueue *queue = [[NSOperationQueue alloc] init];
@@ -68,10 +72,10 @@ NSOperationQueue *queue = [[NSOperationQueue alloc] init];
      if ([data length] >0  &&
          error == nil){
          
-         /* Append the file name to the documents directory */
+         // Append the file name to the documents directory
          NSURL *filePath =
          [[self documentsFolderUrl]
-          URLByAppendingPathComponent:@"apple.html"];
+          URLByAppendingPathComponent:@"justek.html"];
          
          [data writeToURL:filePath atomically:YES];
                       
@@ -88,12 +92,14 @@ NSOperationQueue *queue = [[NSOperationQueue alloc] init];
      
  }];
     
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+     
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

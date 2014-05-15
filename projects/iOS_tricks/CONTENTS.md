@@ -64,7 +64,7 @@
 
 
 
-#Problems set
+<br/>Problems set
 
 <br/>4. Constructing and Using Table Views
 
@@ -76,13 +76,169 @@
 <br/><2>Assign that object to the dataSource property of a table view.
 
 
+<br/>11. Networking, JSON, XML, and Sharing
+<br/>////////////////////
+<br/>11.0. Introduction
+<br/> XML, JSON, and sharing options
+<br/> connect to the Internet and retrieve and send data - NSURLConnection class.
+<br/> JSON serialization and deserialization - NSJSONSerialization class
+<br/> XML parsing - NSXMLParse class
+<br/> manages the connectivity to web services in a more thorough way - NSURLSession class
+<br/>////////////////////
+<br/>11.1. Downloading Asynchronously with NSURLConnection
+<br/>
+<br/>Problem
+<br/>to download a file from a URL, asynchronously.
 
+<br/>Solution
+<br/>Use the NSURLConnection class with an asynchronous request.
 
-
-
-
-
-
-
-
-
+<br/>Discussion
+<br/>the only difference between a synchronous and an asynchronous connection is that:
+<br/>the runtime will create a thread for the asynchronous connection, 
+<br/>while it won’t do the same for a synchronous connection.
+<br/>
+<br/>create an asynchronous connection
+<br/>(1)an instance of NSString - URL
+<br/>(2)an instance of NSURL - convert from the above URL
+<br/>(3)
+<br/> an instance of NSURLRequest - a URL Request 
+<br/> an instance of NSMutableURLRequest - mutable URLs
+<br/>(4)an instance of NSURLConnection, pass the URL request to it
+<br/>
+<br/> create an asynchronous URL connection using the class method of NSURLConnection. 
+<br/>sendAsynchronousRequest:queue:completionHandler: 
+<br/>
+<br/>////////////////////
+<br/>11.2. Handling Timeouts in Asynchronous Connections
+<br/>Problem
+<br/>set a wait limit—in other words, a timeout—on an asynchronous connection.
+<br/>Solution
+<br/>Set the timeout on the URL request that you pass to the NSURLConnection class.
+<br/>Discussion
+<br/>instantiating an object of type NSURLRequest to pass to your URL connection, 
+<br/>use its requestWithURL:cachePolicy:timeoutInterval: class method and 
+<br/>pass the desired number of seconds of your timeout as the timeoutInterval parameter.
+<br/>
+<br/>////////////////////
+<br/>11.3. Downloading Synchronously with NSURLConnection
+<br/>Problem
+<br/>to download the contents of a URL, synchronously.
+<br/>Solution
+<br/>Use the sendSynchronousRequest:returningResponse:error: class method of NSURLConnection. 
+<br/>The return value of this method is data of type NSData.
+<br/>Discussion
+<br/>Using the sendSynchronousRequest:returningResponse:error: class method of NSURLConnection
+<br/>a synchronous URL connection won’t necessarily block the main thread, if managed properly. 
+<br/>Synchronous connections are guaranteed to block the current thread, though.
+<br/>Grand Central Dispatch - GCD
+<br/>
+<br/>////////////////////
+<br/>11.4. Modifying a URL Request with NSMutableURLRequest
+<br/>Problem
+<br/>to adjust various HTTP headers and settings of a URL request before passing it to a URL connection.
+<br/>Solution
+<br/>Use NSMutableURLRequest instead of NSURLRequest.
+<br/>Discussion
+<br/>A URL request can be either mutable or immutable. 
+<br/>A mutable URL request can be changed after it has been allocated and initialized, 
+<br/>whereas an immutable URL request cannot. Mutable URL requests are the target of this recipe. 
+<br/>You can create them using the NSMutableURLRequest class.
+<br/>
+<br/>////////////////////
+<br/>11.5. Sending HTTP GET Requests with NSURLConnection
+<br/>Problem
+<br/>to send a GET request over the HTTP protocol and perhaps pass parameters along your request to the receiver.
+<br/>Solution
+<br/>By convention, GET requests allow parameters through query strings of the familiar form:
+<br/>   "http://example.com/?param1=value1&param2=value2..."
+<br/>use strings to provide the parameters in the conventional format.
+<br/>Discussion
+<br/>A GET request is a request to a web server to retrieve data. 
+<br/>The request usually carries some parameters, 
+<br/>which are sent in a query string as part of the URL.
+<br/>
+<br/>////////////////////
+<br/>11.6. Sending HTTP POST Requests with NSURLConnection
+<br/>Problem
+<br/>You want to call a web service using the HTTP POST method, 
+<br/>and perhaps pass pa‐ rameters (as part of the HTTP body or in the query string) to the web service.
+<br/>Solution
+<br/>Just as with the GET method, we can use the POST method using NSURLConnection. 
+<br/>We must explicitly set our URL’s method to POST.
+<br/>Discussion
+<br/>create an asynchronous connection and send a few parameters as a query string 
+<br/>and a few parameters in the HTTP body to a URL
+<br/>
+<br/>////////////////////
+<br/>11.7. Sending HTTP DELETE Requests with NSURLConnection
+<br/>Problem
+<br/>to call a web service using the HTTP DELETE method to delete a resource from a URL, 
+<br/>and perhaps pass parameters, as part of the HTTP body or in the query string, to the web service.
+<br/>Solution
+<br/>Just as with the GET and POST methods, you can use the DELETE method using NSURLConnection. 
+<br/>You must explicitly set your URL’s method to DELETE.
+<br/>Discussion
+<br/>create an asynchronous connection and send a few parameters as a query string 
+<br/>and a few parameters in the HTTP body to the aforementioned URL, using the DELETE HTTP method
+<br/>
+<br/>////////////////////
+<br/>11.8. Sending HTTP PUT Requests with NSURLConnection
+<br/>Problem
+<br/>You want to call a web service using the HTTP PUT method to place a resource into the web server, 
+<br/>and perhaps pass parameters as part of the HTTP body or in the query string, to the web service.
+<br/>Solution
+<br/>Just as with the GET, POST, and DELETE methods, we can use the PUT method using NSURLConnection. 
+<br/>We must explicitly set our URL’s method to PUT.
+<br/>Discussion
+<br/>create an asynchronous connection and send a few parameters as a query string 
+<br/>and a few parameters in the HTTP body to the aforementioned URL using the PUT method:
+<br/>
+<br/>////////////////////
+<br/>11.9. Serializing Arrays and Dictionaries into JSON Problem
+<br/>to serialize a dictionary or an array into a JSON object that you can transfer over the network or simply save to disk.
+<br/>Solution
+<br/>Use the dataWithJSONObject:options:error: method of the NSJSONSerialization class.
+<br/>Discussion
+<br/>The dataWithJSONObject:options:error: method of the NSJSONSerialization class 
+<br/>can serialize dictionaries and arrays that contain only instances of 
+<br/>NSString, NSNum ber, NSArray, NSDictionary variables, or NSNull for nil values. 
+<br/>
+<br/>////////////////////
+<br/>11.10. Deserializing JSON into Arrays and Dictionaries
+<br/>Problem
+<br/>You have JSON data, and you want to deserialize it into a dictionary or an array.
+<br/>Solution
+<br/>Use the JSONObjectWithData:options:error: method of the NSJSONSerialization class.
+<br/>Discussion
+<br/>The options parameter of the JSONObjectWithData:options:error: method accepts one or a mixture of the following values:
+<br/>NSJSONReadingMutableContainers
+<br/>The dictionary or the array returned by the JSONObjectWithData:options:er ror: method will be mutable. 
+<br/>In other words, this method will return either an instance of NSMutableArray or NSMutableDictionary, 
+<br/>as opposed to an immutable array or dictionary.
+<br/>NSJSONReadingMutableLeaves
+<br/>Leaf values will be encapsulated into instances of NSMutableString.
+<br/>NSJSONReadingAllowFragments
+<br/>Allows the deserialization of JSON data whose root top-level object is not an array or a dictionary.
+<br/>
+<br/>////////////////////
+<br/>11.11. Integrating Social Sharing into Your Apps
+<br/>Problem
+<br/>You want to provide sharing capabilities in your app so that your user can compose 
+<br/>a tweet or a Facebook status update on her device.
+<br/>Solution
+<br/>Incorporate the Social framework into your app and use 
+<br/>the SLComposeViewControl ler class to compose social sharing messages, such as tweets.
+<br/>Discussion
+<br/>The SLComposeViewController class is available in the Social framework and with the Modules feature in the LLVM compiler. All you have to do to start using this framework is import its umbrella header file into your project like so:
+<br/>    井import "ViewController.h"
+<br/>    井import <Social/Social.h>
+<br/>    @implementation ViewController
+<br/>
+<br/>////////////////////
+<br/>11.12. Parsing XML with NSXMLParser 
+<br/>Problem
+<br/>You want to parse an XML snippet or document.
+<br/>Solution
+<br/>Use the NSXMLParser class. Discussion
+The NSXMLParser uses a delegate model to parse XML content.

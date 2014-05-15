@@ -16,14 +16,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    BNRCoursesViewController *cvc = [[BNRCoursesViewController alloc] initWithStyle:UITableViewStylePlain];
+    BNRCoursesViewController *cvc = [[BNRCoursesViewController alloc] initWithStyle:UITableViewStylePlain]; //create an instance of BNRCoursesViewController
 
-    UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc];
+    UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc]; //set it as the root view controller of a navigation controller
 
     BNRWebViewController *wvc = [[BNRWebViewController alloc] init];
     cvc.webViewController = wvc;
 
-    self.window.rootViewController = masterNav;
+    self.window.rootViewController = masterNav; //make the navigation controller the root view controller of the window
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
