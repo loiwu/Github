@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1FAF977B-8BA7-45C2-92B1-50E749B3DD49</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Using Different Types of Accessories in a Table View Cell</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA089F41-088A-440C-92CE-D7CBA885EE0C</key>
+		<string>https://github.com/loiwu/Github.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>projects/iOS_tricks/Chapter 04/4.2.Using Different Types of Accessories in a Table View Cell/Using Different Types of Accessories in a Table View Cell.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA089F41-088A-440C-92CE-D7CBA885EE0C</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/loiwu/Github.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA089F41-088A-440C-92CE-D7CBA885EE0C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA089F41-088A-440C-92CE-D7CBA885EE0C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Github</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -65,17 +65,47 @@
 
 
 <br/>Problems set
+<br/>1.9. Presenting and Managing Views with UIViewController
+<br/>Problem
+<br/>You want to switch among different views in your application.
+<br/>Solution
+<br/>Use the UIViewController class.
+<br/>Discussion
+<br/>View controllers can be loaded from .xib files,or simply be created programmatically.
+<br/>
 
 <br/>4. Constructing and Using Table Views
-
+<br/>
+<br/>4.0. Introduction
+<br/>
+<br/>
 <br/>4.1. Populating a Table View with Data
 <br/>Problem
 <br/>You would like to populate your table view with data.
 <br/>Solution
 <br/><1>Conform to the UITableViewDataSource protocol in an object 
 <br/><2>Assign that object to the dataSource property of a table view.
-
-
+<br/>
+<br/>
+<br/>++++++++++++++++++++++++
+<br/>4.2. Using Different Types of Accessories in a Table View Cell
+<br/>Problem
+<br/>You want to grab users’ attention in a table view by displaying accessories 
+<br/>and offer different ways to interact with each cell in your table view.
+<br/>Solution
+<br/>Use the accessoryType of the UITableViewCell class, 
+<br/>instances of which you provide to your table view in its data source object:
+<br/>
+<br/>++++++++++++++++++++++++
+<br/>4.3. Creating Custom Table View Cell Accessories Problem
+<br/>The accessories provided to you by the iOS SDK are not sufficient, 
+<br/>and you would like to create your own accessories.
+<br/>Solution
+<br/>Assign an instance of the UIView class to the accessoryView property of any instance 
+<br/>of the UITableViewCell class:
+<br/>
+<br/>++++++++++++++++++++++++
+<br/>
 <br/>11. Networking, JSON, XML, and Sharing
 <br/>////////////////////
 <br/>11.0. Introduction

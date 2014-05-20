@@ -16,6 +16,7 @@ static NSString *TableViewCellIdentifier = @"MyCells";
 
 @implementation ViewController
 
+//tell the table view that we want to render three sessions
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
     if ([tableView isEqual:self.myTableView]){
@@ -25,7 +26,8 @@ static NSString *TableViewCellIdentifier = @"MyCells";
     return 0;
     
 }
-    
+
+// tell the table view how many rows we want it to render in each session
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
     
@@ -50,6 +52,7 @@ static NSString *TableViewCellIdentifier = @"MyCells";
     
 }
 
+// return instances of UITableViewCell to the table view
 - (UITableViewCell *)     tableView:(UITableView *)tableView
               cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
