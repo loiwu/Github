@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GWNEWKit.xcscheme</key>
+		<key>NETKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EA2B9B06192C4E5B0016509A</key>
+		<key>EA2B9B43192C52FC0016509A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA2B9B16192C4E5C0016509A</key>
+		<key>EA2B9B53192C52FC0016509A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

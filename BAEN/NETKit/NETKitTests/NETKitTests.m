@@ -1,6 +1,6 @@
 //
-//  GWNEWKitTests.m
-//  GWNEWKitTests
+//  NETKitTests.m
+//  NETKitTests
 //
 //  Created by loi on 5/21/14.
 //  Copyright (c) 2014 GWrabbit. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface GWNEWKitTests : XCTestCase
+@interface NETKitTests : XCTestCase
 
 @end
 
-@implementation GWNEWKitTests
+@implementation NETKitTests
 
 - (void)setUp
 {

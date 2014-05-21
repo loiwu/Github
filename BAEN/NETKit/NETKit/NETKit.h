@@ -1,13 +1,13 @@
 //
-//  GWNEWKit.m
-//  GWNEWKit
+//  NETKit.h
+//  NETKit
 //
 //  Created by loi on 5/21/14.
 //  Copyright (c) 2014 GWrabbit. All rights reserved.
 //
 
-#import "GWNEWKit.h"
+#import <Foundation/Foundation.h>
 
-@implementation GWNEWKit
+@interface NETKit : NSObject
 
 @end

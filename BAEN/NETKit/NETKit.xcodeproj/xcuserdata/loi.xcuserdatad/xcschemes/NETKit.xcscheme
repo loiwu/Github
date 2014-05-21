@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EA2B9B06192C4E5B0016509A"
-               BuildableName = "libGWNEWKit.a"
-               BlueprintName = "GWNEWKit"
-               ReferencedContainer = "container:GWNEWKit.xcodeproj">
+               BlueprintIdentifier = "EA2B9B43192C52FC0016509A"
+               BuildableName = "libNETKit.a"
+               BlueprintName = "NETKit"
+               ReferencedContainer = "container:NETKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EA2B9B16192C4E5C0016509A"
-               BuildableName = "GWNEWKitTests.xctest"
-               BlueprintName = "GWNEWKitTests"
-               ReferencedContainer = "container:GWNEWKit.xcodeproj">
+               BlueprintIdentifier = "EA2B9B53192C52FC0016509A"
+               BuildableName = "NETKitTests.xctest"
+               BlueprintName = "NETKitTests"
+               ReferencedContainer = "container:NETKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
