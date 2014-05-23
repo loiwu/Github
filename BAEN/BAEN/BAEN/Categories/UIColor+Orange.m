@@ -13,7 +13,8 @@
 @implementation UIColor (Orange)
 
 + (UIColor *)mainOrangeColor {
-    return [UIColor colorWithRed:(65.0f / 255.0f) green:(105.0f / 255.0f) blue:(225.0f / 255.0f) alpha:1.0f];
+    //return [UIColor colorWithRed:(65.0f / 255.0f) green:(105.0f / 255.0f) blue:(225.0f / 255.0f) alpha:1.0f];
+      return [UIColor colorWithRed:(218.0f / 255.0f) green:(165.0f / 255.0f) blue:(32.0f / 255.0f) alpha:1.0f];
 }
 
 + (UIColor *)lightOrangeColor {
