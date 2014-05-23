@@ -19,6 +19,25 @@
 		EA08324B192EE056006C0265 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA083233192EE056006C0265 /* UIKit.framework */; };
 		EA083253192EE056006C0265 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA083251192EE056006C0265 /* InfoPlist.strings */; };
 		EA083255192EE056006C0265 /* iBAENTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083254192EE056006C0265 /* iBAENTests.m */; };
+		EA083267192EE5F6006C0265 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA083266192EE5F6006C0265 /* libxml2.dylib */; };
+		EA083268192EE5FA006C0265 /* libNETKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA083263192EE315006C0265 /* libNETKit.a */; };
+		EA08326A192EE609006C0265 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA083269192EE609006C0265 /* QuartzCore.framework */; };
+		EA08326C192EE612006C0265 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA08326B192EE612006C0265 /* MessageUI.framework */; };
+		EA08326E192EE61A006C0265 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA08326D192EE61A006C0265 /* MobileCoreServices.framework */; };
+		EA083270192EE659006C0265 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA08326F192EE659006C0265 /* CoreText.framework */; };
+		EA08327A192EEF66006C0265 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083279192EEF66006C0265 /* SplitViewController.m */; };
+		EA08327D192EF1DA006C0265 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08327C192EF1DA006C0265 /* NavigationController.m */; };
+		EA083280192EF879006C0265 /* UIColor+Colorful.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08327F192EF879006C0265 /* UIColor+Colorful.m */; };
+		EA083283192EFA3F006C0265 /* ColorfulBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083282192EFA3F006C0265 /* ColorfulBarView.m */; };
+		EA083286192EFB9B006C0265 /* ColorfulNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083285192EFB9B006C0265 /* ColorfulNavigationBar.m */; };
+		EA083289192F0FA6006C0265 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083288192F0FA6006C0265 /* MainTabBarController.m */; };
+		EA08328C192F102A006C0265 /* BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08328B192F102A006C0265 /* BarButtonItem.m */; };
+		EA08328F192F10DD006C0265 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08328E192F10DD006C0265 /* TabBarController.m */; };
+		EA083292192F2789006C0265 /* EmptyController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083291192F2789006C0265 /* EmptyController.m */; };
+		EA083295192F287E006C0265 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083294192F287E006C0265 /* EmptyView.m */; };
+		EA083298192F28EE006C0265 /* ColorfulTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA083297192F28EE006C0265 /* ColorfulTableView.m */; };
+		EA08329B192F2CFC006C0265 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08329A192F2CFC006C0265 /* TableViewCell.m */; };
+		EA08329E192F2DE4006C0265 /* SessionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08329D192F2DE4006C0265 /* SessionListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EA08322B192EE056006C0265;
 			remoteInfo = iBAEN;
+		};
+		EA083262192EE315006C0265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA08325E192EE315006C0265 /* NETKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA2B9B44192C52FC0016509A;
+			remoteInfo = NETKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +74,38 @@
 		EA083250192EE056006C0265 /* iBAENTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBAENTests-Info.plist"; sourceTree = "<group>"; };
 		EA083252192EE056006C0265 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA083254192EE056006C0265 /* iBAENTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBAENTests.m; sourceTree = "<group>"; };
+		EA08325E192EE315006C0265 /* NETKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NETKit.xcodeproj; path = NETKit/NETKit.xcodeproj; sourceTree = "<group>"; };
+		EA083266192EE5F6006C0265 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EA083269192EE609006C0265 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA08326B192EE612006C0265 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EA08326D192EE61A006C0265 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EA08326F192EE659006C0265 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		EA083278192EEF66006C0265 /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		EA083279192EEF66006C0265 /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
+		EA08327B192EF1DA006C0265 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		EA08327C192EF1DA006C0265 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		EA08327E192EF879006C0265 /* UIColor+Colorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colorful.h"; sourceTree = "<group>"; };
+		EA08327F192EF879006C0265 /* UIColor+Colorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colorful.m"; sourceTree = "<group>"; };
+		EA083281192EFA3F006C0265 /* ColorfulBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfulBarView.h; sourceTree = "<group>"; };
+		EA083282192EFA3F006C0265 /* ColorfulBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfulBarView.m; sourceTree = "<group>"; };
+		EA083284192EFB9B006C0265 /* ColorfulNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfulNavigationBar.h; sourceTree = "<group>"; };
+		EA083285192EFB9B006C0265 /* ColorfulNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfulNavigationBar.m; sourceTree = "<group>"; };
+		EA083287192F0FA6006C0265 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		EA083288192F0FA6006C0265 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		EA08328A192F102A006C0265 /* BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarButtonItem.h; sourceTree = "<group>"; };
+		EA08328B192F102A006C0265 /* BarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarButtonItem.m; sourceTree = "<group>"; };
+		EA08328D192F10DD006C0265 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		EA08328E192F10DD006C0265 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		EA083290192F2789006C0265 /* EmptyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyController.h; sourceTree = "<group>"; };
+		EA083291192F2789006C0265 /* EmptyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyController.m; sourceTree = "<group>"; };
+		EA083293192F287E006C0265 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		EA083294192F287E006C0265 /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
+		EA083296192F28EE006C0265 /* ColorfulTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfulTableView.h; sourceTree = "<group>"; };
+		EA083297192F28EE006C0265 /* ColorfulTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfulTableView.m; sourceTree = "<group>"; };
+		EA083299192F2CFC006C0265 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		EA08329A192F2CFC006C0265 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		EA08329C192F2DE4006C0265 /* SessionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionListController.h; sourceTree = "<group>"; };
+		EA08329D192F2DE4006C0265 /* SessionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA083270192EE659006C0265 /* CoreText.framework in Frameworks */,
+				EA08326E192EE61A006C0265 /* MobileCoreServices.framework in Frameworks */,
+				EA08326C192EE612006C0265 /* MessageUI.framework in Frameworks */,
+				EA08326A192EE609006C0265 /* QuartzCore.framework in Frameworks */,
+				EA083268192EE5FA006C0265 /* libNETKit.a in Frameworks */,
+				EA083267192EE5F6006C0265 /* libxml2.dylib in Frameworks */,
 				EA083232192EE056006C0265 /* CoreGraphics.framework in Frameworks */,
 				EA083234192EE056006C0265 /* UIKit.framework in Frameworks */,
 				EA083230192EE056006C0265 /* Foundation.framework in Frameworks */,
@@ -77,6 +141,7 @@
 		EA083223192EE056006C0265 = {
 			isa = PBXGroup;
 			children = (
+				EA08325E192EE315006C0265 /* NETKit.xcodeproj */,
 				EA083235192EE056006C0265 /* iBAEN */,
 				EA08324E192EE056006C0265 /* iBAENTests */,
 				EA08322E192EE056006C0265 /* Frameworks */,
@@ -96,6 +161,11 @@
 		EA08322E192EE056006C0265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA08326F192EE659006C0265 /* CoreText.framework */,
+				EA08326D192EE61A006C0265 /* MobileCoreServices.framework */,
+				EA08326B192EE612006C0265 /* MessageUI.framework */,
+				EA083269192EE609006C0265 /* QuartzCore.framework */,
+				EA083266192EE5F6006C0265 /* libxml2.dylib */,
 				EA08322F192EE056006C0265 /* Foundation.framework */,
 				EA083231192EE056006C0265 /* CoreGraphics.framework */,
 				EA083233192EE056006C0265 /* UIKit.framework */,
@@ -107,6 +177,12 @@
 		EA083235192EE056006C0265 /* iBAEN */ = {
 			isa = PBXGroup;
 			children = (
+				EA083271192EED84006C0265 /* Categories */,
+				EA083272192EED84006C0265 /* Cells */,
+				EA083273192EED84006C0265 /* Controllers */,
+				EA083274192EED84006C0265 /* Follow Model */,
+				EA083275192EED84006C0265 /* Instapaper */,
+				EA083276192EED84006C0265 /* Views */,
 				EA08323E192EE056006C0265 /* AppDelegate.h */,
 				EA08323F192EE056006C0265 /* AppDelegate.m */,
 				EA083241192EE056006C0265 /* Images.xcassets */,
@@ -142,6 +218,90 @@
 				EA083251192EE056006C0265 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA08325F192EE315006C0265 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA083263192EE315006C0265 /* libNETKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA083271192EED84006C0265 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EA08327E192EF879006C0265 /* UIColor+Colorful.h */,
+				EA08327F192EF879006C0265 /* UIColor+Colorful.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EA083272192EED84006C0265 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EA083299192F2CFC006C0265 /* TableViewCell.h */,
+				EA08329A192F2CFC006C0265 /* TableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EA083273192EED84006C0265 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA083277192EEF35006C0265 /* Containers */,
+				EA083290192F2789006C0265 /* EmptyController.h */,
+				EA083291192F2789006C0265 /* EmptyController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA083274192EED84006C0265 /* Follow Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Follow Model";
+			sourceTree = "<group>";
+		};
+		EA083275192EED84006C0265 /* Instapaper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Instapaper;
+			sourceTree = "<group>";
+		};
+		EA083276192EED84006C0265 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA083281192EFA3F006C0265 /* ColorfulBarView.h */,
+				EA083282192EFA3F006C0265 /* ColorfulBarView.m */,
+				EA083284192EFB9B006C0265 /* ColorfulNavigationBar.h */,
+				EA083285192EFB9B006C0265 /* ColorfulNavigationBar.m */,
+				EA08328A192F102A006C0265 /* BarButtonItem.h */,
+				EA08328B192F102A006C0265 /* BarButtonItem.m */,
+				EA083293192F287E006C0265 /* EmptyView.h */,
+				EA083294192F287E006C0265 /* EmptyView.m */,
+				EA083296192F28EE006C0265 /* ColorfulTableView.h */,
+				EA083297192F28EE006C0265 /* ColorfulTableView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA083277192EEF35006C0265 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				EA083278192EEF66006C0265 /* SplitViewController.h */,
+				EA083279192EEF66006C0265 /* SplitViewController.m */,
+				EA08327B192EF1DA006C0265 /* NavigationController.h */,
+				EA08327C192EF1DA006C0265 /* NavigationController.m */,
+				EA083287192F0FA6006C0265 /* MainTabBarController.h */,
+				EA083288192F0FA6006C0265 /* MainTabBarController.m */,
+				EA08328D192F10DD006C0265 /* TabBarController.h */,
+				EA08328E192F10DD006C0265 /* TabBarController.m */,
+				EA08329C192F2DE4006C0265 /* SessionListController.h */,
+				EA08329D192F2DE4006C0265 /* SessionListController.m */,
+			);
+			name = Containers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +366,12 @@
 			mainGroup = EA083223192EE056006C0265;
 			productRefGroup = EA08322D192EE056006C0265 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EA08325F192EE315006C0265 /* Products */;
+					ProjectRef = EA08325E192EE315006C0265 /* NETKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA08322B192EE056006C0265 /* iBAEN */,
@@ -213,6 +379,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EA083263192EE315006C0265 /* libNETKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNETKit.a;
+			remoteRef = EA083262192EE315006C0265 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EA08322A192EE056006C0265 /* Resources */ = {
@@ -239,7 +415,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA08328C192F102A006C0265 /* BarButtonItem.m in Sources */,
 				EA083240192EE056006C0265 /* AppDelegate.m in Sources */,
+				EA08329E192F2DE4006C0265 /* SessionListController.m in Sources */,
+				EA083280192EF879006C0265 /* UIColor+Colorful.m in Sources */,
+				EA083283192EFA3F006C0265 /* ColorfulBarView.m in Sources */,
+				EA08327D192EF1DA006C0265 /* NavigationController.m in Sources */,
+				EA083286192EFB9B006C0265 /* ColorfulNavigationBar.m in Sources */,
+				EA08327A192EEF66006C0265 /* SplitViewController.m in Sources */,
+				EA08329B192F2CFC006C0265 /* TableViewCell.m in Sources */,
+				EA083298192F28EE006C0265 /* ColorfulTableView.m in Sources */,
+				EA083292192F2789006C0265 /* EmptyController.m in Sources */,
+				EA083295192F287E006C0265 /* EmptyView.m in Sources */,
+				EA08328F192F10DD006C0265 /* TabBarController.m in Sources */,
+				EA083289192F0FA6006C0265 /* MainTabBarController.m in Sources */,
 				EA08323C192EE056006C0265 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +474,7 @@
 		EA083256192EE056006C0265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -298,7 +487,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -314,6 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -324,7 +515,7 @@
 		EA083257192EE056006C0265 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -337,7 +528,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -347,6 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,9 +552,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBAEN/iBAEN-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "iBAEN/iBAEN-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,9 +569,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBAEN/iBAEN-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "iBAEN/iBAEN-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

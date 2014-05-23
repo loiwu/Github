@@ -6,10 +6,17 @@
 //  Copyright (c) 2014 GWrabbit. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SplitViewController.h"
+#import "NavigationController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate, UINavigationControllerDelegate,UISplitViewControllerDelegate>
+{
+    UIWindow *window;
+    
+    SplitViewController *splitController;
+    
+    NavigationController *navigationController;
+    NavigationController *rightNavigationController;
+}
 
 @end

@@ -5,45 +5,124 @@
 //  Created by loi on 5/23/14.
 //  Copyright (c) 2014 GWrabbit. All rights reserved.
 //
+#include <sys/types.h>
+#include <sys/sysctl.h>
 
 #import "AppDelegate.h"
+#import "SplitViewController.h"
+#import "NavigationController.h"
+#import "MainTabBarController.h"
+
+#import "EmptyController.h"
+
+#import <NETKit/NETKit.h>
+#import <NETKit/NETNetworkActivityController.h>
+
+@implementation UINavigationController (AppDelegate)
+
+- (BOOL)controllerBelongsOnLeft:(UIViewController *)controller {
+    return [controller isKindOfClass:[MainTabBarController class]];
+    //|| [controller isKindOfClass:[SessionListController class]]
+    //|| [controller isKindOfClass:[SearchController class]]
+    //|| [controller isKindOfClass:[ProfileController class]]
+    //|| [controller isKindOfClass:[MoreController class]]
+    //|| [controller isKindOfClass:[SubmissionListController class]];
+}
+
+- (void)willShowController:(UIViewController *)controller animated:(BOOL)animated {
+    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        if ([self controllerRequiresClearing:controller]) {
+            [delegate clearLeafViewControllerAnimated:animated];
+        }
+    }
+}
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    navigationController = [[NavigationController alloc] initWithRootViewController:sessionListController];
+//    [navigationController setLoginDelegate:sessionListController];
+    navigationController = [[NavigationController alloc] init];
+    [navigationController setDelegate:self];
+    [navigationController autorelease];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        [window setRootViewController:navigationController];
+        
+        [NETObjectBodyRenderer setDefaultFontSize:13.0f];
+    } else if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        rightNavigationController = [[NavigationController alloc] init];
+//        [rightNavigationController setLoginDelegate:sessionListController];
+        [rightNavigationController setDelegate:self];
+        [rightNavigationController autorelease];
+        
+        [self clearLeafViewControllerAnimated:NO];
+        
+        splitController = [[SplitViewController alloc] init];
+        [splitController setViewControllers:[NSArray arrayWithObjects:navigationController, rightNavigationController, nil]];
+        if ([splitController respondsToSelector:@selector(setPresentsWithGesture:)]) [splitController setPresentsWithGesture:YES];
+        [splitController setDelegate:self];
+        [splitController autorelease];
+        
+        [window setRootViewController:splitController];
+        
+        [NETObjectBodyRenderer setDefaultFontSize:16.0f];
+    } else {
+        NSAssert(NO, @"Invalid Device Type");
+    }
+    
+    [window makeKeyAndVisible];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+#pragma mark - View Controllers
+
+- (void)navigationController:(UINavigationController *)navigation willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [navigation willShowController:viewController animated:animated];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation {
+    return UIInterfaceOrientationIsPortrait(orientation);
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+#pragma mark - Application Lifecycle
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NETSessionController sessionController] refresh];
+    
+   // [InstapaperSession logoutIfNecessary];
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    
+}
+
+- (void)dealloc {
+    [window release];
+    [navigationController release];
+    [rightNavigationController release];
+    [splitController release];
+    
+    [super dealloc];
+}
 @end
