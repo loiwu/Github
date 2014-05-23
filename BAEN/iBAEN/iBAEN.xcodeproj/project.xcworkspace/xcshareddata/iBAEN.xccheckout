@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6E75CAB4-A66B-46A4-BC7D-E73A368EE1B3</string>
+	<string>FF2B4AEF-A0C2-4033-9262-3B5EC840F0E4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iBAEN</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F08F6E36-EB66-4BCD-B97D-9894CE85EAE8</key>
+		<key>4A3B7F4F-C122-4620-AAB5-25439172B8B4</key>
 		<string>https://github.com/loiwu/Github.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BAEN/iBAEN/iBAEN.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F08F6E36-EB66-4BCD-B97D-9894CE85EAE8</key>
+		<key>4A3B7F4F-C122-4620-AAB5-25439172B8B4</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F08F6E36-EB66-4BCD-B97D-9894CE85EAE8</string>
+	<string>4A3B7F4F-C122-4620-AAB5-25439172B8B4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F08F6E36-EB66-4BCD-B97D-9894CE85EAE8</string>
+			<string>4A3B7F4F-C122-4620-AAB5-25439172B8B4</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Github</string>
+			<string>iBAEN</string>
 		</dict>
 	</array>
 </dict>
