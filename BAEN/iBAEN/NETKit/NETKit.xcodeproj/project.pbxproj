@@ -226,43 +226,19 @@
 		EA2B9B49192C52FC0016509A /* NETKit */ = {
 			isa = PBXGroup;
 			children = (
+				EAC973661932E497009C58EE /* rendering */,
+				EAC973651932E478009C58EE /* internal */,
+				EAC973641932E45C009C58EE /* sessions */,
+				EAC973631932E43C009C58EE /* data */,
 				EA2B9B4A192C52FC0016509A /* Supporting Files */,
 				EA2B9B4C192C52FC0016509A /* NETKit.h */,
 				EA2B9B92192C6F5F0016509A /* NETShared.h */,
-				EA2B9B93192C70580016509A /* NETNetworkActivityController.h */,
-				EA2B9B94192C70580016509A /* NETNetworkActivityController.m */,
-				EA2B9B96192C70D00016509A /* NETAnonymousSession.h */,
-				EA2B9B97192C70D00016509A /* NETAnonymousSession.m */,
-				EA2B9B99192C71400016509A /* NETAPIRequest.h */,
-				EA2B9B9A192C71400016509A /* NETAPIRequest.m */,
-				EA2B9B9C192C719B0016509A /* NETAPIRequestParser.h */,
-				EA2B9B9D192C719B0016509A /* NETAPIRequestParser.m */,
 				EA2B9B9F192C71E40016509A /* NETAPISearch.h */,
 				EA2B9BA0192C71E40016509A /* NETAPISearch.m */,
-				EA2B9BA2192C72370016509A /* NETAPISubmission.h */,
-				EA2B9BA3192C72370016509A /* NETAPISubmission.m */,
-				EA2B9BA5192C729D0016509A /* NETContainer.h */,
-				EA2B9BA6192C729D0016509A /* NETContainer.m */,
-				EA2B9BA8192C72EA0016509A /* NETEntry.h */,
-				EA2B9BA9192C72EA0016509A /* NETEntry.m */,
-				EA2B9BAB192C73530016509A /* NETEntryList.h */,
-				EA2B9BAC192C73530016509A /* NETEntryList.m */,
-				EA2B9BAE192C73910016509A /* NETObject.h */,
-				EA2B9BAF192C73910016509A /* NETObject.m */,
-				EA2B9BB1192C73DD0016509A /* NETObjectBodyRenderer.h */,
-				EA2B9BB2192C73DD0016509A /* NETObjectBodyRenderer.m */,
 				EA2B9BB4192C74160016509A /* NETObjectCache.h */,
 				EA2B9BB5192C74160016509A /* NETObjectCache.m */,
-				EA2B9BB7192C74560016509A /* NETSession.h */,
-				EA2B9BB8192C74560016509A /* NETSession.m */,
-				EA2B9BBA192C74970016509A /* NETSessionAuthenticator.h */,
-				EA2B9BBB192C74970016509A /* NETSessionAuthenticator.m */,
-				EA2B9BBD192C74D30016509A /* NETSessionController.h */,
-				EA2B9BBE192C74D30016509A /* NETSessionController.m */,
-				EA2B9BC0192C75070016509A /* NETSubmission.h */,
-				EA2B9BC1192C75070016509A /* NETSubmission.m */,
-				EA2B9BC3192C75410016509A /* NETUser.h */,
-				EA2B9BC4192C75410016509A /* NETUser.m */,
+				EA2B9B93192C70580016509A /* NETNetworkActivityController.h */,
+				EA2B9B94192C70580016509A /* NETNetworkActivityController.m */,
 			);
 			path = NETKit;
 			sourceTree = "<group>";
@@ -317,6 +293,62 @@
 				EA2B9B49192C52FC0016509A /* NETKit */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		EAC973631932E43C009C58EE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B9BA5192C729D0016509A /* NETContainer.h */,
+				EA2B9BA6192C729D0016509A /* NETContainer.m */,
+				EA2B9BA8192C72EA0016509A /* NETEntry.h */,
+				EA2B9BA9192C72EA0016509A /* NETEntry.m */,
+				EA2B9BAB192C73530016509A /* NETEntryList.h */,
+				EA2B9BAC192C73530016509A /* NETEntryList.m */,
+				EA2B9BAE192C73910016509A /* NETObject.h */,
+				EA2B9BAF192C73910016509A /* NETObject.m */,
+				EA2B9BC3192C75410016509A /* NETUser.h */,
+				EA2B9BC4192C75410016509A /* NETUser.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		EAC973641932E45C009C58EE /* sessions */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B9B96192C70D00016509A /* NETAnonymousSession.h */,
+				EA2B9B97192C70D00016509A /* NETAnonymousSession.m */,
+				EA2B9BB7192C74560016509A /* NETSession.h */,
+				EA2B9BB8192C74560016509A /* NETSession.m */,
+				EA2B9BBA192C74970016509A /* NETSessionAuthenticator.h */,
+				EA2B9BBB192C74970016509A /* NETSessionAuthenticator.m */,
+				EA2B9BBD192C74D30016509A /* NETSessionController.h */,
+				EA2B9BBE192C74D30016509A /* NETSessionController.m */,
+				EA2B9BC0192C75070016509A /* NETSubmission.h */,
+				EA2B9BC1192C75070016509A /* NETSubmission.m */,
+			);
+			name = sessions;
+			sourceTree = "<group>";
+		};
+		EAC973651932E478009C58EE /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B9B99192C71400016509A /* NETAPIRequest.h */,
+				EA2B9B9A192C71400016509A /* NETAPIRequest.m */,
+				EA2B9B9C192C719B0016509A /* NETAPIRequestParser.h */,
+				EA2B9B9D192C719B0016509A /* NETAPIRequestParser.m */,
+				EA2B9BA2192C72370016509A /* NETAPISubmission.h */,
+				EA2B9BA3192C72370016509A /* NETAPISubmission.m */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		EAC973661932E497009C58EE /* rendering */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B9BB1192C73DD0016509A /* NETObjectBodyRenderer.h */,
+				EA2B9BB2192C73DD0016509A /* NETObjectBodyRenderer.m */,
+			);
+			name = rendering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,7 +515,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
 				DSTROOT = /tmp/NETKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -491,7 +522,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SKIP_INSTALL = YES;
 			};
@@ -501,7 +531,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Feng YongHeng (28WN55KXEL)";
 				DSTROOT = /tmp/NETKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -509,7 +538,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SKIP_INSTALL = YES;
 			};

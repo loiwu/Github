@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iBAEN.xcscheme</key>
+		<key>BAEN.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EA08322B192EE056006C0265</key>
+		<key>EA7FBB7D192C776200AE5BF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA083246192EE056006C0265</key>
+		<key>EA7FBB98192C776200AE5BF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

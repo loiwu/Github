@@ -14,8 +14,8 @@
 #define NETKIT_RENDERING_ENABLED
 
 
-#define kNETWebsiteHost @"news.ycombinator.com"
-#define kNETFAQURL [NSURL URLWithString:@"http://ycombinator.com/newsfaq.html"]
+#define kNETWebsiteHost @"news.ycombinator.com" //@"m.bayequest.com"
+#define kNETFAQURL [NSURL URLWithString:@"http://www.bayequest.info/static/web.htm"]
 #define kNETWebsiteURL [NSURL URLWithString:[NSString stringWithFormat:@"https://%@/", kNETWebsiteHost]]
 
 

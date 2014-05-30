@@ -47,8 +47,12 @@
 			pluralize = YES;
 		}
         
-		return [NSString stringWithFormat:@"%d %@%@ ago",
+        /*return [NSString stringWithFormat:@"%d %@%@ ago",
 				difference,
+				unit,
+				(pluralize ? @"s" : @"")];*/
+		return [NSString stringWithFormat:@"%lu %@%@ ago",
+				(unsigned long)difference,
 				unit,
 				(pluralize ? @"s" : @"")];
 	}

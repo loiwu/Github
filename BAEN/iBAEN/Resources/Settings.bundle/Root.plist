@@ -24,9 +24,9 @@
 			<key>DefaultValue</key>
 			<false/>
 			<key>Key</key>
-			<string>disable-orange</string>
+			<string>disable-colorful</string>
 			<key>Title</key>
-			<string>Less Orange</string>
+			<string>Less Colorful</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
